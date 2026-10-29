@@ -113,7 +113,6 @@ CNI는 아직 미정이다.
 
 ```text
 docs/              설계, 그림
-docs/notes/        30초 설명 노트 (사용자가 직접 작성)
 ansible/
   inventory/       사설 IP만
   group_vars/      비밀값은 ansible-vault
