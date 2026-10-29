@@ -1,0 +1,25 @@
+# 이 파일은 비밀값·키·kubeconfig·임시 파일이 저장소에 올라가지 않도록 막기 위한 Git 제외 목록이다.
+
+# 비밀값·키 (SSH 키, 인증서 키, 환경 변수 파일, ansible-vault 비밀번호 파일)
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+.env*
+.vault_pass*
+*vault-password*
+
+# Ansible 재시도 파일
+*.retry
+
+# kubeconfig (클러스터 관리자 접속 정보)
+admin.conf
+kubeconfig*
+*.kubeconfig
+
+# OS·편집기 파일
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
